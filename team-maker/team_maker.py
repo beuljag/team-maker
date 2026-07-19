@@ -25,4 +25,5 @@ if __name__ == "__main__":
         make_teams()
         again = input("다시 팀을 짜시겠습니까? (y/n): ").lower()
         if again != "y":
-            break
+            if again !="ㅛ":
+                break
