@@ -34,22 +34,5 @@
 팀 3: 수진, 동혁
 ```
 
----
-
-## exe 파일 만들기
-`pyinstaller`를 사용하면 exe 파일로 변환할 수 있습니다.
-
-```bash
-pip install pyinstaller
-pyinstaller --onefile --icon=icon.ico team_maker.py
-```
-
-- `--onefile` : 하나의 exe 파일로 묶음  
-- `--icon=icon.ico` : 아이콘 지정  
-- 콘솔 입력을 사용하므로 `--noconsole` 옵션은 쓰지 않습니다.  
-
-빌드 후 `dist/team_maker.exe` 파일이 생성됩니다.
-
----
 
 💡 팀 인원수는 최대한 균등하게 나눠지며, 차이는 최대 1명까지만 발생합니다.
