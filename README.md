@@ -1,1 +1,55 @@
-# team-maker
+# Team Maker 🎲
+
+이 프로그램은 이름을 입력하고 팀 개수를 지정하면 콘솔에서 랜덤으로 팀을 나눠주는 간단한 파이썬 스크립트입니다.
+
+## 사용 방법
+1. Python 3 설치
+2. 저장소 클론
+   ```bash
+   git clone https://github.com/your-username/team-maker.git
+   cd team-maker
+   ```
+3. 실행
+   ```bash
+   python team_maker.py
+   ```
+4. 첫 줄에 이름들을 `,`로 구분해서 입력합니다.
+   ```
+   철수, 영희, 민수, 지영
+   ```
+5. 두 번째 줄에 팀 개수를 입력합니다.
+   ```
+   2
+   ```
+6. 랜덤으로 팀이 나눠져 출력됩니다.  
+   `y`를 입력하면 다시 랜덤으로 팀을 새로 짜줍니다.
+
+## 예시
+```
+이름들을 ,로 구분해서 입력하세요: 철수, 영희, 민수, 지영, 수진, 동혁, 은지
+팀 개수를 입력하세요: 3
+
+팀 1: 영희, 민수, 은지
+팀 2: 철수, 지영
+팀 3: 수진, 동혁
+```
+
+---
+
+## exe 파일 만들기
+`pyinstaller`를 사용하면 exe 파일로 변환할 수 있습니다.
+
+```bash
+pip install pyinstaller
+pyinstaller --onefile --icon=icon.ico team_maker.py
+```
+
+- `--onefile` : 하나의 exe 파일로 묶음  
+- `--icon=icon.ico` : 아이콘 지정  
+- 콘솔 입력을 사용하므로 `--noconsole` 옵션은 쓰지 않습니다.  
+
+빌드 후 `dist/team_maker.exe` 파일이 생성됩니다.
+
+---
+
+💡 팀 인원수는 최대한 균등하게 나눠지며, 차이는 최대 1명까지만 발생합니다.
